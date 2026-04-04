@@ -95,3 +95,11 @@ exports.loginUser = async (req, res) => {
         res.status(500).json({ error: "Login process failed" });
     }
 };
+
+exports.healthCheck = (req, res) => {
+    res.status(200).json({ 
+        message: "Backend is running",
+        timestamp: new Date().toISOString()
+    });
+};
+
