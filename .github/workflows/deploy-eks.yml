@@ -76,7 +76,6 @@ jobs:
           # This command creates the deployment if it doesn't exist
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml
-          # kubectl apply -f k8s/configmap.yaml # If you have these as files
 
       - name: Update Image Tag
         run: |
