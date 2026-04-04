@@ -6,6 +6,8 @@ metadata:
     app: homecare-backend
 spec:
   type: LoadBalancer
+  loadBalancerSourceRanges:
+    - 203.0.113.10/32
   selector:
     app: homecare-backend
   ports:
