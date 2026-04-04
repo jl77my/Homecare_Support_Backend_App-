@@ -13,6 +13,8 @@ spec:
     metadata:
       labels:
         app: homecare-backend
+      annotations:
+        restartedAt: "2026-04-04T12:00:00Z"  # Update this timestamp
     spec:
       tolerations:
         - key: "CriticalAddonsOnly"
